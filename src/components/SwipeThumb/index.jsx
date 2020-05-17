@@ -18,7 +18,7 @@ class SwipeThumb extends React.Component {
   constructor(props) {
     super(props);
     const paddingAndMarginsOffset = borderWidth + 2 * margin;
-    this.defaultContainerWidth = props.iconSize;
+    this.defaultContainerWidth = props.iconWidth;
     this.maxWidth = props.layoutWidth - paddingAndMarginsOffset;
     this.state = {
       animatedWidth: new Animated.Value(),
