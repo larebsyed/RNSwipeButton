@@ -183,7 +183,6 @@ class SwipeThumb extends React.Component {
       thumbIconStyles,
     } = this.props;
     const dynamicStyles = {
-      ...thumbIconStyles,
       height: iconSize,
       width: iconWidth,
       backgroundColor: disabled
@@ -193,6 +192,7 @@ class SwipeThumb extends React.Component {
         ? disabledThumbIconBorderColor
         : thumbIconBorderColor,
       overflow: 'hidden',
+      ...thumbIconStyles,
     };
 
     return (
