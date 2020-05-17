@@ -31,6 +31,7 @@ interface Props {
     titleFontSize?: number;
     titleStyles?: StyleProp<TextStyle>;
     width?: string | number;
+    iconWidth?: string | number;
 }
 
 interface State {
