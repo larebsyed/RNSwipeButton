@@ -113,6 +113,7 @@ class SwipeButton extends React.Component {
       titleFontSize,
       titleStyles,
       width,
+      iconWidth,
     } = this.props;
     const { screenReaderEnabled } = this.state;
 
@@ -151,6 +152,7 @@ class SwipeButton extends React.Component {
             disabledThumbIconBorderColor={disabledThumbIconBorderColor}
             enableRightToLeftSwipe={enableRightToLeftSwipe}
             iconSize={height}
+            iconWidth={iconWidth}
             layoutWidth={this.state.layoutWidth}
             onSwipeFail={onSwipeFail}
             onSwipeStart={onSwipeStart}
@@ -195,6 +197,7 @@ SwipeButton.defaultProps = {
   titleColor: TITLE_COLOR,
   titleFontSize: 20,
   titleStyles: {},
+  iconWidth: 50,
 };
 
 SwipeButton.propTypes = {
@@ -234,6 +237,7 @@ SwipeButton.propTypes = {
   titleFontSize: PropTypes.number,
   titleStyles: PropTypes.object,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  iconWidth: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 export default SwipeButton;
