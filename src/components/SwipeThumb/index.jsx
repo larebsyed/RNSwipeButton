@@ -225,8 +225,8 @@ class SwipeThumb extends React.Component {
       backgroundColor: this.state.backgroundColor,
       borderColor: this.state.borderColor,
       width: this.state.animatedWidth,
-      ...railStyles,
       ...(enableRightToLeftSwipe ? styles.containerRTL : styles.container),
+      ...railStyles,
     };
     if (screenReaderEnabled) {
       return (
