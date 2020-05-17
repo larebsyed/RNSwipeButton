@@ -175,6 +175,7 @@ class SwipeThumb extends React.Component {
       disabledThumbIconBackgroundColor,
       disabledThumbIconBorderColor,
       iconSize,
+      iconWidth,
       thumbIconBackgroundColor,
       thumbIconBorderColor,
       thumbIconComponent: ThumbIconComponent,
@@ -184,7 +185,7 @@ class SwipeThumb extends React.Component {
     const dynamicStyles = {
       ...thumbIconStyles,
       height: iconSize,
-      width: iconSize,
+      width: iconWidth,
       backgroundColor: disabled
         ? disabledThumbIconBackgroundColor
         : thumbIconBackgroundColor,
@@ -264,6 +265,7 @@ SwipeThumb.propTypes = {
   disabledThumbIconBorderColor: PropTypes.string,
   enableRightToLeftSwipe: PropTypes.bool,
   iconSize: PropTypes.number,
+  iconWidth: PropTypes.number,
   layoutWidth: PropTypes.number,
   onSwipeFail: PropTypes.func,
   onSwipeStart: PropTypes.func,
